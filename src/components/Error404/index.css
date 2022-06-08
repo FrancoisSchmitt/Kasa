@@ -1,0 +1,45 @@
+.error-404 {
+      font-size: 288px;
+      font-weight: 700;
+}
+
+.error-404-information {
+      font-size: 36px;
+      margin-top: -3%;
+      font-weight: 500;
+}
+
+.error-404,
+.error-404-information {
+      color: #ff6060;
+}
+
+.error-content {
+      display: flex;
+      flex-direction: column;
+      line-height: 1px;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 10%;
+}
+
+.nav-link {
+      margin-bottom: 10%;
+      text-decoration: none;
+}
+
+.Error-return-menu {
+      border-bottom: 1px solid #ff6060;
+      width: 249px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+      .error-404 {
+            font-size: 99px;
+      }
+}

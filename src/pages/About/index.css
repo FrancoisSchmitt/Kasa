@@ -1,0 +1,21 @@
+.test {
+      position: relative;
+}
+
+.dropdown-container-content:nth-child(1n) div {
+      margin-left: 5%;
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+
+      .bannerAbout div img {
+            width: 335px;
+            height: 111px;
+      }
+
+
+}

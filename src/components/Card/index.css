@@ -1,0 +1,51 @@
+.image-acco {
+      height: 340px;
+      width: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+      text-align: center;
+}
+
+.linear-image {
+      height: 340px;
+      width: 340px;
+      position: absolute;
+      background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+      );
+      border-radius: 10px;
+}
+
+.title-card {
+      font-size: 18px;
+      width: 18%;
+      margin: auto;
+      margin-top: -5%;
+      color: #fff;
+      position: absolute;
+      z-index: 1;
+      margin-left: 2%;
+}
+
+.card-info,
+article {
+      height: 340px;
+      width: 340px;
+}
+
+@media only screen and (max-width: 375px) {
+      .card-info,
+      .linear-image,
+      .image-acco {
+            width: 335px;
+            height: 255px;
+      }
+
+      .title-card {
+            width: 70%;
+            margin-top: -20%;
+            margin-left: 7%;
+      }
+}

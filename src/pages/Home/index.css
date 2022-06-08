@@ -1,0 +1,61 @@
+.gallery {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-bottom: 6%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.gallery-link {
+      height: 340px;
+      width: 340px;
+      text-decoration: none;
+      margin-top: 20%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.Home {
+      margin-top: 4%;
+}
+
+.gallery-background {
+      background-color: #f7f7f7;
+      width: 86.2%;
+      border-radius: 25px;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+@media only screen and (max-width: 375px) {
+      .gallery {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .banner div img {
+            width: 335px;
+            height: 111px;
+      }
+
+      .banner div {
+            width: 335px;
+            height: 111px;
+      }
+
+      .gallery-background {
+            width: 100%;
+      }
+
+      .gallery-link,
+      article {
+            width: 335px;
+            height: 255px;
+      }
+
+      .gallery-link {
+            margin-top: 5%;
+      }
+}

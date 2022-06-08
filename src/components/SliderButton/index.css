@@ -1,0 +1,17 @@
+button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+      background-color: none;
+      background: none;
+      border: none;
+}
+
+.next {
+      right: 1%;
+}
+
+.previous {
+      left: 1%;
+}

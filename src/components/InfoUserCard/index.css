@@ -1,0 +1,16 @@
+.userInfo {
+      display: flex;
+      align-items: center;
+
+      justify-content: center;
+}
+
+.userInfo h2 {
+      width: 45%;
+}
+
+.userInfo img {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+}
