@@ -1,63 +1,65 @@
 .title-of-accommodation {
-    font-size: 36px;
-    color: #ff6060;
-    font-weight: 500;
+      font-size: 36px;
+      color: #ff6060;
+      font-weight: 500;
 }
 
 .legende-accommodation {
-    font-size: 24px;
-    color: #ff6060;
-    font-weight: 500;
+      font-size: 24px;
+      color: #ff6060;
+      font-weight: 500;
 }
 
 .accommodation {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .container-accommodation {
-    width: 63%;
-    position: relative;
-    right: 5px;
+      width: 63%;
+      position: relative;
+      right: 5px;
 }
 
 .card-content {
-    width: 64%;
+      width: 64%;
 }
 
 .lol {
-    margin-right: 2%;
+      margin-right: 2%;
 }
 
 @media only screen and (max-width: 375px) {
-    .accommodation {
-        display: flex;
-        flex-direction: column;
-    }
+      .accommodation {
+            display: flex;
+            flex-direction: column;
+      }
 
-    .card-content, .card-content div, .title-of-accommodation {
-        width: 100%;
-    }
+      .card-content,
+      .card-content div,
+      .title-of-accommodation {
+            width: 100%;
+      }
 
-    .title-of-accommodation {
-        font-size: 18px;
-    }
+      .title-of-accommodation {
+            font-size: 18px;
+      }
 
-    .legende-accommodation {
-        font-size: 14px;
-    }
+      .legende-accommodation {
+            font-size: 14px;
+      }
 
-    .container-accommodation {
-        width: 63%;
-        position: relative;
-        right: 45px;
-    }
+      .container-accommodation {
+            width: 63%;
+            position: relative;
+            right: 45px;
+      }
 
-    .dropdown-content-accommodation {
-        width: 335px;
-    }
+      .dropdown-content-accommodation {
+            width: 335px;
+      }
 }

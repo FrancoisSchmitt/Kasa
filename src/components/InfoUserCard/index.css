@@ -1,16 +1,23 @@
 .userInfo {
       display: flex;
       align-items: center;
-
-      justify-content: center;
+      justify-content: space-evenly;
 }
 
 .userInfo h2 {
       width: 45%;
+      font-weight: 500;
+      color: #ff6060;
 }
 
 .userInfo img {
       height: 64px;
       width: 64px;
       border-radius: 50%;
+}
+
+@media only screen and (max-width: 375px) {
+      .userInfo {
+            justify-content: space-evenly;
+      }
 }

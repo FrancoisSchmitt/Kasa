@@ -1,6 +1,6 @@
 import './index.css';
 function InfoUserCard(ContentCard) {
-      const { title, infoTitle, nameUser, imageUser, imageName } = ContentCard;
+      const { nameUser, imageUser, imageName } = ContentCard;
 
       return (
             <div>

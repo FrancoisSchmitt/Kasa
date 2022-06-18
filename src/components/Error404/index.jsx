@@ -2,7 +2,7 @@ import './index.css';
 import { NavLink } from 'react-router-dom';
 function Error() {
       return (
-            <section>
+            <section className="error">
                   <div className="error-content">
                         <h1 className="error-404">404</h1>
                         <h2 className="error-404-information">
@@ -12,7 +12,7 @@ function Error() {
                   <NavLink
                         to="/"
                         className={(isActive) =>
-                              'nav-link Error-return-menu' +
+                              'nav-link-home Error-return-menu' +
                               (!isActive ? ' unselected' : '')
                         }
                   >

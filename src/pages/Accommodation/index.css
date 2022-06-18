@@ -1,99 +1,174 @@
 .card-rating {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    margin: 0;
-    padding: 0;
-    right: -33px;
-    position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      margin: 0;
+      padding: 0;
+      right: -16px;
+      position: relative;
 }
 
 .rating {
-    list-style-type: none;
-    display: flex;
-    padding-left: 0px;
-    justify-content: center;
+      list-style-type: none;
+      display: flex;
+      padding-left: 0px;
+      justify-content: space-evenly;
 }
 
 .tagsSection {
-    display: flex;
-    width: 50%;
+      display: flex;
+      width: 50%;
+}
+
+.accommodation-section {
+      margin-top: -5%;
+}
+
+.accommodation-dropdown-content {
+      width: 89.5%;
+      display: flex;
+      margin: auto;
 }
 
 .accomodationDropdowns {
-    display: flex;
-    width: 95.5%;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-evenly;
+      display: flex;
+      width: 96.3%;
+      flex-direction: row;
+      margin: auto;
+      justify-content: space-evenly;
+      gap: 5.4%;
 }
 
 .dropdown-container-content p {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
 }
 
 .dropdown-container-content ul {
-    padding: 0;
-    margin-left: 0;
+      padding: 0;
+      margin-left: 0;
 }
 
 .dropdown-container-content ul li {
-    margin-left: 0;
-    margin-left: 13.5px;
+      margin-left: 0;
+      margin-left: 13.5px;
 }
 
 .title-dropdown h2 {
-    color: #ffffff;
-    margin-left: 5%;
+      color: #ffffff;
+      margin-left: 5%;
 }
 
 .dropdown-container-content:nth-child(0) ul li {
-    margin-left: 20%;
+      margin-left: 20%;
 }
 
 .dropdown-content:nth-child(1) div div {
-    margin-left: 5%;
+      margin-left: 5%;
 }
 
 .accommodation-content-equipment {
-    margin-left: 0 !important;
+      margin-left: 0 !important;
 }
 
+.accomodationDropdowns div div div div,
+.accomodationDropdowns div div div {
+      font-size: 18px;
+      font-weight: 400;
+      height: 180px;
+}
+
+.accommodation-content-equipment,
+.accommodation-content-equipment li {
+      list-style-type: none;
+      text-decoration: none;
+      margin: 0 !important;
+      padding: 0 !important;
+}
 
 @media only screen and (max-width: 375px) {
-    .accomodationDropdowns {
-        display: flex;
-        flex-direction: column;
-    }
+      .accomodationDropdowns {
+            display: flex;
+            flex-direction: column;
+      }
 
-    .card-rating {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 82%;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+      .card-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 73%;
+            justify-content: space-evenly;
+            align-items: center;
+      }
 
-    .rating li img {
-        height: 15px;
-        width: 15px;
-    }
+      .rating li img {
+            height: 15px;
+            width: 15px;
+      }
 
-    .rating {
-        right: 44px;
-        position: inherit;
-    }
+      .rating {
+            right: 44px;
+            position: inherit;
+      }
 
-    .tagsSection {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-    }
+      .tagsSection {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+      }
 
-    .accommodation-section {
-        margin-top: -20%;
-    }
+      .accommodation-section {
+            margin-top: -20%;
+      }
+
+      .userInfo {
+            position: relative;
+            left: 10%;
+      }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+      .card-rating {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+      }
+
+      .rating {
+            right: 44px;
+            position: inherit;
+      }
+
+      .userInfo {
+            width: 130%;
+            position: relative;
+            right: 61px;
+      }
+
+      .userInfo h2 {
+            width: 40%;
+      }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+      .card-rating {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+      }
+
+      .rating {
+            right: 44px;
+            position: inherit;
+      }
+
+      .userInfo {
+            width: 130%;
+            position: relative;
+            right: 61px;
+      }
+
+      .userInfo h2 {
+            width: 40%;
+      }
 }

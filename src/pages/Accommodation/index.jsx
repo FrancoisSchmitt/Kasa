@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import logements from '../../data/logements.json';
-import DropdownAccommodation from '../../components/DropdownAccommodation';
+import Dropdown from '../../components/Dropdown';
 import InfoUserCard from '../../components/InfoUserCard';
 import Tag from '../../components/Tag';
 import InfoAccommodation from '../../components/InfoAccommodation';
@@ -9,20 +9,24 @@ import './index.css';
 import Stars from '../../components/Stars';
 import Slider from '../../components/Slider';
 
-function getAccomodationById(id) {
+function getAccomodation(id) {
       return logements.filter((logement) => logement.id === id)[0];
 }
 
 function Accomodation() {
       const { id } = useParams();
       const navigate = useNavigate();
-      const accommodation = getAccomodationById(id);
-      // console.log(accommodation);
+      const accommodation = getAccomodation(id);
+
       useEffect(() => {
-            if (id === accommodation.id) {
-                  navigate(accommodation);
-            }
-            // console.log('coucou');
+            // if (id === 'c67ab8a7') {
+            //       console.log(id + "ceci est l'id que je recherche ");
+            //       console.log(accommodation.id + "ceci est l'id de mon fichier json");
+            //       console.log(accommodation); //renvoie le tableau de donnée en fonction de l'id trouvé
+            // }
+            // else  {
+            //       navigate('/404');
+            // }
       }, []);
 
       return (
@@ -52,32 +56,32 @@ function Accomodation() {
                               <Stars EventStars={accommodation.rating} />
                         </div>
                   </div>
+                  <div className="accommodation-dropdown-content">
+                        <div className="accomodationDropdowns">
+                              <Dropdown
+                                    title="Description"
+                                    content={accommodation.description}
+                                    className="lolasa"
+                              />
 
-                  <div className="accomodationDropdowns">
-                        <DropdownAccommodation
-                              title="Description"
-                              content={accommodation.description}
-                              className="lolasa"
-                        />
-
-                        <DropdownAccommodation
-                              title="Équipements"
-                              content={accommodation.equipments.map(
-                                    (equipment, index) => (
-                                          <div
-                                                key={`equipment-${index}`}
-                                                className="accommodation-content-equipment"
-                                          >
-                                                {equipment}
-                                          </div>
-                                    )
-                              )}
-                        />
+                              <Dropdown
+                                    title="Équipements"
+                                    content={accommodation.equipments.map(
+                                          (equipment, index) => (
+                                                <ul
+                                                      key={`equipment-${index}`}
+                                                      className="accommodation-content-equipment"
+                                                >
+                                                      <li>{equipment}</li>
+                                                </ul>
+                                          )
+                                    )}
+                              />
+                        </div>
                   </div>
             </section>
       );
 }
-
 export default Accomodation;
 
 // if (!id == newId.id){
